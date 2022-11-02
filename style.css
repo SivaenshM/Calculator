@@ -1,0 +1,94 @@
+/* Imported Google fonts link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* Basic all elements settings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    background-color: #eaeaea;
+    outline: none;
+}
+/* header Section Design */
+header h1 {
+    font-size: 40px;
+    text-decoration: underline;
+   
+}
+/* Main Container Design */
+.container {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+/* calculator area Styling */
+.calculator {
+    background-color: #ecf0f3;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: inset 5px 5px 12px #ffffff,
+                      5px 5px 12px rgba(0,0,0,.16);
+    display: grid;
+    grid-template-columns: repeat(4,70px);
+}
+/* display output field styling */
+input {
+    grid-column: span 4;
+    height: 70px;
+    width: 265px;
+    background-color: #ecf0f3;
+    box-shadow: inset -5px -5px 12px #ffffff,
+                inset 5px 5px 12px rgba(0,0,0,.16);
+    border-style: none;
+    border-radius: 25px;
+    color: rgb(70,70,70);
+    font-size: 50px;
+    text-align: end;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 15px;
+    outline: none;
+}
+/* each button styling */
+button {
+    height: 48px;
+    width: 48px;
+    background-color: #ecf0f3;
+    box-shadow: -5px 5px 12px #ffffff,
+                5px 5px 12px rgba(0,0,0,.16);
+    border: none;
+    border-radius: 10px;
+    margin: 8px;
+    font-size: 16px;
+    font-weight: 700;
+}
+/* giving hover and active button styling */
+button:hover,button:active {
+    background-color: #ecf0f3;
+    box-shadow: -2px 2px 8px #ffffff,
+                2px 2px 8px rgba(0,0,0,.25);
+}
+#equal {
+    width: 118px; 
+    background-color: #ecf0f3;
+    box-shadow: -5px 5px 12px #ffffff,
+                5px 5px 12px rgba(0,0,0,.16);
+    border: none;  
+}
+
+#math {
+    display: flex;
+    /* justify-content: end;
+    align-items: auto; */
+    flex-direction: row;
+    gap : 8px;
+    position: absolute;
+}
+
+#title, #description {
+    text-align: center;
+}
